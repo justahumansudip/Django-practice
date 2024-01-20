@@ -8,7 +8,7 @@ class StudentView:
     @api_view(['POST'])
     def post_student(request):
        try:
-         reuest_data = request.data
+         request_data = request.data
          serializer =StudentSerializers(data=request_data,many=False)
          if serializer.is_valid():
              serializer.save()

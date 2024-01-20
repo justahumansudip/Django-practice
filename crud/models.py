@@ -16,5 +16,5 @@ class Teacher(models.Model):
     Email=models.EmailField()
     
     def __str__(self) -> str:
-        return f'{self.name}'
+        return f"{self.name}"
         
