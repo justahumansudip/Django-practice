@@ -10,11 +10,11 @@ class Student(models.Model):
         return f'{self.name}'
 
 class Teacher(models.Model):
-    name=models.CharField(max_length=100)
+    Name=models.CharField(max_length=100)
     Phone_Number=models.CharField(max_length=100)
     Salary=models.IntegerField()
     Email=models.EmailField()
     
     def __str__(self) -> str:
-        return f"{self.name}"
+        return f"{self.Name}"
         
